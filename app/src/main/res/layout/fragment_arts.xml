@@ -30,6 +30,7 @@
         android:layout_margin="20dp"
         android:backgroundTint="#B66B6B"
         android:clickable="true"
+        android:src="@mipmap/ic_launcher"
         app:layout_anchor="@id/recyclerView"
         app:layout_anchorGravity="bottom|right|end"
 

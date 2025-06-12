@@ -10,6 +10,10 @@ android {
     namespace = "com.bugrahankaramollaoglu.artbook"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.bugrahankaramollaoglu.artbook"
         minSdk = 23
