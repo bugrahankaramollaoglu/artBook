@@ -16,9 +16,7 @@ interface ArtDao {
     @Delete
     suspend fun deleteArt(art: Art)
 
-
     @Query("SELECT * FROM arts")
-    suspend fun observeArt(): LiveData<List<Art>>
-
+    fun observeArt(): LiveData<List<Art>>
 
 }
