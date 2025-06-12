@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
     kotlin("plugin.serialization") version "1.9.20" // Must match Kotlin version
     id("androidx.navigation.safeargs.kotlin") // Kotlin version of SafeArgs
     kotlin("kapt") // For Room and other annotation processors
@@ -49,6 +50,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    implementation("com.google.dagger:hilt-android:2.56.2")
+//    ksp("com.google.dagger:hilt-android-compiler:2.56.2")
 
     // Room Database
     val roomVersion = "2.7.1"
