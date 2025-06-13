@@ -2,7 +2,7 @@ package com.bugrahankaramollaoglu.artbook.di
 
 import android.content.Context
 import androidx.room.Room
-import com.bugrahankaramollaoglu.artbook.api.RetrofitApi
+import com.bugrahankaramollaoglu.artbook.api.RetrofitAPI
 import com.bugrahankaramollaoglu.artbook.room.ArtDatabase
 import com.bugrahankaramollaoglu.artbook.util.Util.BASE_URL
 import dagger.Module
@@ -31,11 +31,11 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun injectRetrofitAPI(): RetrofitApi {
+    fun injectRetrofitAPI(): RetrofitAPI {
         return Retrofit.Builder(
 
         ).addConverterFactory(GsonConverterFactory.create()).baseUrl(BASE_URL).build().create(
-            RetrofitApi::class.java
+            RetrofitAPI::class.java
         )
     }
 
