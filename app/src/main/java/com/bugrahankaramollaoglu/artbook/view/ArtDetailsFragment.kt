@@ -9,8 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bugrahankaramollaoglu.artbook.R
 import com.bugrahankaramollaoglu.artbook.databinding.FragmentArtsDetailBinding
+import com.bumptech.glide.RequestManager
+import javax.inject.Inject
 
-class ArtDetailsFragment : Fragment(R.layout.fragment_arts_detail) {
+class ArtDetailsFragment @Inject constructor(
+    val glide: RequestManager
+): Fragment(R.layout.fragment_arts_detail) {
 
     private var fragmentBinding: FragmentArtsDetailBinding? = null
 
